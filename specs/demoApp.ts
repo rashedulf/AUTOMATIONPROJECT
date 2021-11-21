@@ -1,11 +1,17 @@
 import { browser, by, element } from "protractor";
+import { searchProducts } from "../pages/searchProduct";
 
-describe("demoApp test", function(){
+describe("Shop on Online", function(){
 
-    it("launch url check", function(){
-        browser.waitForAngularEnabled(false);
-        browser.get("http://automationpractice.com/");
-        browser.sleep(3000);
+   beforeEach(function(){
+    browser.waitForAngularEnabled(false);
+    browser.get("http://automationpractice.com/");
+   })
+
+    it("Search the item", function(){
+        
+       let lookForAnItem= new searchProducts();
+       lookForAnItem.typeProduct();
 
     })
 
