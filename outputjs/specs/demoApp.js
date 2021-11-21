@@ -12,7 +12,7 @@ describe("Shop on Online", function () {
         let lookForAnItem = new searchProduct_1.searchProducts();
         lookForAnItem.typeProduct();
     }),
-        it("Search the item", function () {
+        it("Add the item to the cart", function () {
             let selectAnItem = new addItemToTheCart_1.addItemToTheCart();
             selectAnItem.pickTheProduct();
             expect(protractor_1.browser.getTitle()).toContain("Printed Chiffon Dress - My Store");
