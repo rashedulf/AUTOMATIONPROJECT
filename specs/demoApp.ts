@@ -20,8 +20,8 @@ describe("Shop on Online", function(){
         
         let selectAnItem= new addItemToTheCart();
         selectAnItem.pickTheProduct();
-        expect(browser.getTitle()).toContain("Printed Chiffon Dress - My Store")
-        expect(element(by.id('layer_cart_product_attributes')).getAttribut('innerText').toContain("Green, L");
+        expect(browser.getTitle()).toContain("Printed Chiffon Dress - My Store");
+        expect(element(by.id('layer_cart_product_attributes')).getAttribut('innerText')).toContain("Green, L");
 
  
      })
