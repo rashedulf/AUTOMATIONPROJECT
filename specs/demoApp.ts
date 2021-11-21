@@ -16,7 +16,7 @@ describe("Shop on Online", function(){
 
     }),
 
-    it("Search the item", function(){
+    it("Add the item to the cart", function(){
         
         let selectAnItem= new addItemToTheCart();
         selectAnItem.pickTheProduct();
