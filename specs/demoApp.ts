@@ -20,6 +20,7 @@ describe("Shop on Online", function(){
         
         let selectAnItem= new addItemToTheCart();
         selectAnItem.pickTheProduct();
+        browser.sleep(20000);
  
      })
 
