@@ -16,7 +16,7 @@ describe("Shop on Online", function () {
             let selectAnItem = new addItemToTheCart_1.addItemToTheCart();
             selectAnItem.pickTheProduct();
             protractor_1.browser.sleep(20000);
-            expect(protractor_1.browser.getTitle()).toContain("Product successfully added to your shopping cart");
+            expect(protractor_1.browser.getTitle()).toContain("Printed Chiffon Dress - My Store");
         });
 });
 //it("launch another url check", function(){
