@@ -14,4 +14,3 @@ export let config:Config= {
 
     
     }
-}
