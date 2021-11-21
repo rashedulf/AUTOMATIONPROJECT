@@ -11,11 +11,11 @@ class addItemToTheCart {
         this.addToCart = (0, protractor_1.element)(protractor_1.by.name('Submit'));
         this.selectSizeElm = (0, protractor_1.element)(protractor_1.by.id('group_1'));
     }
-    selectSize() {
+    selectSize(sizeNumber) {
         if (true) {
             var options = this.selectSizeElm.all(protractor_1.by.tagName('option'))
                 .then(function (options) {
-                options[2].click();
+                options[sizeNumber].click();
             });
         }
     }
@@ -23,7 +23,7 @@ class addItemToTheCart {
         this.selectProduct.click();
         this.addNumberofUnits.click();
         protractor_1.browser.sleep(5000);
-        this.selectSize();
+        this.selectSize(2);
         protractor_1.browser.sleep(5000);
         this.color.click();
         this.addToCart.click();
