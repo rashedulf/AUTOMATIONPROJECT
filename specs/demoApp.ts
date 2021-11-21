@@ -28,13 +28,4 @@ describe("Shop on Online", function(){
 
     
 
-    } )
-
-    //it("launch another url check", function(){
-       //element(by.model("first")).sendKeys("12");
-        //element(by.model("second")).sendKeys("13");
-        //element(by.id("gobutton")).click();
-
-        
-   // } )
-//})
+    });
