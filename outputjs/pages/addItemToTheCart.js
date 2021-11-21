@@ -9,10 +9,11 @@ class addItemToTheCart {
         //selectSize= element(by.name('group_1')).$('[value="M"]');
         this.color = (0, protractor_1.element)(protractor_1.by.name('Green'));
         this.addToCart = (0, protractor_1.element)(protractor_1.by.name('Submit'));
+        this.selectSizeElm = (0, protractor_1.element)(protractor_1.by.id('group_1'));
     }
     selectSize() {
         if (true) {
-            var options = protractor_1.element.all(protractor_1.by.id('group_1'))
+            var options = this.selectSizeElm.all(protractor_1.by.tagName('option'))
                 .then(function (options) {
                 options[2].click();
             });
