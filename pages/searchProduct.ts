@@ -3,7 +3,7 @@ import { browser, by, element } from "protractor";
 export class searchProducts{
 
      textBox= element(by.id('search_query_top'));
-     searchIcon= element(by.className('.btn btn-default.button-search'));
+     searchIcon= element(by.name('submit_search'));
 
      typeProduct(){
          this.textBox.sendKeys("dress");
