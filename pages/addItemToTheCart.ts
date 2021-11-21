@@ -26,8 +26,8 @@ export class addItemToTheCart{
          this.selectProduct.click();
          this.addNumberofUnits.click();
          browser.sleep(20000);
-         //this.selectSize.click();
-         //browser.sleep(20000);
+         this.selectSize();
+         browser.sleep(20000);
          this.color.click();
          this.addToCart.click();
          
