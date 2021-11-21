@@ -8,7 +8,7 @@ export class searchProducts{
      typeProduct(){
          this.textBox.sendKeys("dress");
          this.searchIcon.click();
-         browser.sleep(30000);
+         
      }
 
 }

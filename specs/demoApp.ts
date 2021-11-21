@@ -1,4 +1,5 @@
 import { browser, by, element } from "protractor";
+import { addItemToTheCart } from "../pages/addItemToTheCart";
 import { searchProducts } from "../pages/searchProduct";
 
 describe("Shop on Online", function(){
@@ -13,7 +14,14 @@ describe("Shop on Online", function(){
        let lookForAnItem= new searchProducts();
        lookForAnItem.typeProduct();
 
-    })
+    }),
+
+    it("Search the item", function(){
+        
+        let selectAnItem= new addItemToTheCart();
+        selectAnItem.pickTheProduct();
+ 
+     })
 
     
 
