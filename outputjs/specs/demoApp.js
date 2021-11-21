@@ -19,9 +19,3 @@ describe("Shop on Online", function () {
             expect((0, protractor_1.element)(protractor_1.by.id('layer_cart_product_attributes')).getAttribut('innerText')).toContain("Green, L");
         });
 });
-//it("launch another url check", function(){
-//element(by.model("first")).sendKeys("12");
-//element(by.model("second")).sendKeys("13");
-//element(by.id("gobutton")).click();
-// } )
-//})
