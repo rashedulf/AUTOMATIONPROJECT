@@ -11,12 +11,13 @@ export class addItemToTheCart{
      
 
 
-     selectSize(){
+     selectSize(sizeNumber : number){
+
           
              if(true){
                  var options= this.selectSizeElm.all(by.tagName('option'))                 
                  .then(function(options){
-                    options[2].click();
+                    options[sizeNumber].click();
                  })
              }
          }
@@ -27,7 +28,7 @@ export class addItemToTheCart{
          this.selectProduct.click();
          this.addNumberofUnits.click();
          browser.sleep(5000);
-         this.selectSize();
+         this.selectSize(2);
          browser.sleep(5000);
          this.color.click();
          this.addToCart.click();

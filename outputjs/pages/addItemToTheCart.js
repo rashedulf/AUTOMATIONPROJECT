@@ -22,9 +22,9 @@ class addItemToTheCart {
     pickTheProduct() {
         this.selectProduct.click();
         this.addNumberofUnits.click();
-        protractor_1.browser.sleep(20000);
+        protractor_1.browser.sleep(5000);
         this.selectSize();
-        protractor_1.browser.sleep(20000);
+        protractor_1.browser.sleep(5000);
         this.color.click();
         this.addToCart.click();
     }
