@@ -1,11 +1,15 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-describe("demoApp test", function () {
-    it("launch url check", function () {
+const searchProduct_1 = require("../pages/searchProduct");
+describe("Shop on Online", function () {
+    beforeEach(function () {
         protractor_1.browser.waitForAngularEnabled(false);
         protractor_1.browser.get("http://automationpractice.com/");
-        protractor_1.browser.sleep(3000);
+    });
+    it("Search the item", function () {
+        let lookForAnItem = new searchProduct_1.searchProducts();
+        lookForAnItem.typeProduct();
     });
 });
 //it("launch another url check", function(){
