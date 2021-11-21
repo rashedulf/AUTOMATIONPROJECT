@@ -6,7 +6,7 @@ class addItemToTheCart {
     constructor() {
         this.selectProduct = (0, protractor_1.element)(protractor_1.by.css('a[href="http://automationpractice.com/index.php?id_product=7&controller=product"]'));
         //addNumberofUnits= element(by.class('.icon-plus'));
-        this.selectSize = (0, protractor_1.element)(protractor_1.by.css('attribute_list')).$('[value="M"]');
+        this.selectSize = (0, protractor_1.element)(protractor_1.by.name('group_1')).$('[value="M"]');
     }
     //color= element(by.name('Green'));
     //addToCart= element(by.name('Submit'));
