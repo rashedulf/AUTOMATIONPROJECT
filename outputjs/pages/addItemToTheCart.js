@@ -10,12 +10,20 @@ class addItemToTheCart {
         this.color = (0, protractor_1.element)(protractor_1.by.name('Green'));
         this.addToCart = (0, protractor_1.element)(protractor_1.by.name('Submit'));
     }
+    selectSize() {
+        if (true) {
+            var options = protractor_1.element.all(protractor_1.by.id('group_1'))
+                .then(function (options) {
+                options[2].click();
+            });
+        }
+    }
     pickTheProduct() {
         this.selectProduct.click();
         this.addNumberofUnits.click();
         protractor_1.browser.sleep(20000);
-        //this.selectSize.click();
-        //browser.sleep(20000);
+        this.selectSize();
+        protractor_1.browser.sleep(20000);
         this.color.click();
         this.addToCart.click();
     }

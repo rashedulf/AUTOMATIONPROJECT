@@ -7,13 +7,14 @@ export class addItemToTheCart{
      //selectSize= element(by.name('group_1')).$('[value="M"]');
      color= element(by.name('Green'));
      addToCart= element(by.name('Submit'));
+    selectSizeElm= element(by.id('group_1'));
      
 
 
      selectSize(){
           
              if(true){
-                 var options= element.all(by.id('group_1'))
+                 var options= this.selectSizeElm.all(by.tagName('option'))                 
                  .then(function(options){
                     options[2].click();
                  })
