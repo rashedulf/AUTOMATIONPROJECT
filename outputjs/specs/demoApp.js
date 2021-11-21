@@ -1,6 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
+const addItemToTheCart_1 = require("../pages/addItemToTheCart");
 const searchProduct_1 = require("../pages/searchProduct");
 describe("Shop on Online", function () {
     beforeEach(function () {
@@ -10,7 +11,11 @@ describe("Shop on Online", function () {
     it("Search the item", function () {
         let lookForAnItem = new searchProduct_1.searchProducts();
         lookForAnItem.typeProduct();
-    });
+    }),
+        it("Search the item", function () {
+            let selectAnItem = new addItemToTheCart_1.addItemToTheCart();
+            selectAnItem.pickTheProduct();
+        });
 });
 //it("launch another url check", function(){
 //element(by.model("first")).sendKeys("12");

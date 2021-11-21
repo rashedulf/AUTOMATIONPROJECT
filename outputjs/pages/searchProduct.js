@@ -10,7 +10,6 @@ class searchProducts {
     typeProduct() {
         this.textBox.sendKeys("dress");
         this.searchIcon.click();
-        protractor_1.browser.sleep(30000);
     }
 }
 exports.searchProducts = searchProducts;
