@@ -21,7 +21,7 @@ describe("Shop on Online", function(){
         let selectAnItem= new addItemToTheCart();
         selectAnItem.pickTheProduct();
         browser.sleep(20000);
-        expect(browser.getTitle()).toContain("Product successfully added to your shopping cart")
+        expect(browser.getTitle()).toContain("Printed Chiffon Dress - My Store")
 
  
      })
