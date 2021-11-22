@@ -6,7 +6,7 @@ describe("Shop on Online", function(){
 
    beforeEach(function(){
     browser.waitForAngularEnabled(false);
-    browser.get("http://automationpractice.com/");
+   // browser.get("http://automationpractice.com/");
    })
 
     it("Search the item", function(){
