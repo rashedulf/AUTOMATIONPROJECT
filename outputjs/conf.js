@@ -11,6 +11,6 @@ exports.config = {
         defaultTimeoutInterval: 30000
     },
     //browser.waitForAngularEnabled(false);
-    ProtractorBrowser: ("http://automationpractice.com/"),
+    ProtractorBrowser: "http://automationpractice.com/",
     seleniumAddress: "http://localhost:4444/wd/hub"
 };
