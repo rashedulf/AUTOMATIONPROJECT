@@ -10,5 +10,7 @@ exports.config = {
     jasmineNodeOpts: {
         defaultTimeoutInterval: 30000
     },
+    //browser.waitForAngularEnabled(false);
+    ProtractorBrowser: ("http://automationpractice.com/"),
     seleniumAddress: "http://localhost:4444/wd/hub"
 };

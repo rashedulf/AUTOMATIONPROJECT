@@ -6,7 +6,7 @@ const searchProduct_1 = require("../pages/searchProduct");
 describe("Shop on Online", function () {
     beforeEach(function () {
         protractor_1.browser.waitForAngularEnabled(false);
-        protractor_1.browser.get("http://automationpractice.com/");
+        // browser.get("http://automationpractice.com/");
     });
     it("Search the item", function () {
         let lookForAnItem = new searchProduct_1.searchProducts();

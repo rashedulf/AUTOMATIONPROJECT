@@ -17,7 +17,7 @@ export let config:Config= {
     },
 
     //browser.waitForAngularEnabled(false);
-    ProtractorBrowser:("http://automationpractice.com/"),
+    ProtractorBrowser: "http://automationpractice.com/",
 
     
 
