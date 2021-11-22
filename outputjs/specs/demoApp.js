@@ -6,7 +6,7 @@ const searchProduct_1 = require("../pages/searchProduct");
 describe("Shop on Online", function () {
     beforeEach(function () {
         protractor_1.browser.waitForAngularEnabled(false);
-        // browser.get("http://automationpractice.com/");
+        protractor_1.browser.get("http://automationpractice.com/");
     });
     it("Search the item", function () {
         let lookForAnItem = new searchProduct_1.searchProducts();
@@ -16,6 +16,5 @@ describe("Shop on Online", function () {
             let selectAnItem = new addItemToTheCart_1.addItemToTheCart();
             selectAnItem.pickTheProduct();
             expect(protractor_1.browser.getTitle()).toContain("Printed Chiffon Dress - My Store");
-            //expect(element(by.id('layer_cart_product_attributes')).getAttribut('innerText')).toContain("Green, L");
         });
 });
