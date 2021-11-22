@@ -6,7 +6,7 @@ export class addItemToTheCart{
      addNumberofUnits= element(by.className('icon-plus'));
      color= element(by.name('Green'));
      addToCart= element(by.name('Submit'));
-    selectSizeElm= element(by.id('group_1'));
+     selectSizeElm= element(by.id('group_1'));
      
 
 
@@ -28,7 +28,6 @@ export class addItemToTheCart{
          this.addNumberofUnits.click();
          browser.sleep(5000);
          this.selectSize(2);
-         browser.sleep(5000);
          this.color.click();
          this.addToCart.click();
          
