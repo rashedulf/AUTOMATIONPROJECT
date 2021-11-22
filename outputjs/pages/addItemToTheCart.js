@@ -23,7 +23,6 @@ class addItemToTheCart {
         this.addNumberofUnits.click();
         protractor_1.browser.sleep(5000);
         this.selectSize(2);
-        protractor_1.browser.sleep(5000);
         this.color.click();
         this.addToCart.click();
     }
